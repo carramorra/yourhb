@@ -1,5 +1,4 @@
 """
-app.py — Flask server for Mood → Text Rewriter
 Run:  python app.py
 Then open:  http://localhost:5000
 """
@@ -11,7 +10,7 @@ from rewriter import apply_rules, word_diff, MOODS
 # Resolve paths relative to this file, so Flask finds templates
 # no matter which directory you run the script from.
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-app = Flask(__name__, template_folder=os.path.join(BASE_DIR, "templates"))
+app = Flask(__name__, template_folder=os.path.join(BASE_DIR, "template"))
 
 DEFAULT_TEXT = (
     "I wanted to let you know that the meeting today was productive. "
